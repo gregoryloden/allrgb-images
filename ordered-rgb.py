@@ -1,7 +1,5 @@
 import cv2
 import numpy
-import os
-import math
 
 #Needs to be an even number
 BITS_PER_COLOR = 8
