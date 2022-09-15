@@ -7,7 +7,7 @@ import heapq
 # General algorithm: for each band/square of untouched pixels expanding out from the center, choose pixels to place in that square based on the following:
 # - Brightest colors get priority
 # - Least-represented hues get priority within a brightness
-# - Most-saturated colors get priority within a hue
+# - An even distribution of saturations are selected within a hue, although higher saturations get priority for being in the "center" of a hue section
 # - Order the hues ascending from 0-6 (magenta = 0, red = 1, green = 3, etc.)
 # - Insert monochrome colors where applicable, trying to minimizes how far it shifts each hue away from its "ideal" location (magenta at top, red 60 degrees left, green at bottom, etc.)
 # - Place hues next to each other in order around that band of pixels
